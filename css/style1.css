@@ -42,6 +42,11 @@
   .bt {
     width: 100%;
     min-height: 100px;
+    padding: 9px;
+  }
+  .b a{
+    padding: 7px;
+    margin: 23px;
   }
 
   .b {
