@@ -21,38 +21,40 @@
 </head>
 
 <body>
-    <header>
-     <nav>
-    <div class="logo">Priya Modi</div>
+<header>
+    <nav>
+        <div class="logo">Priya Modi</div>
 
-    <div class="menu-btn" onclick="openMenu()">
-        <i class="bi bi-list"></i>
+        <div class="menu-btn" onclick="openMenu()">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <ul class="desktop-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="closeMenu()">
+            <i class="bi bi-x-lg"></i>
+        </div>
+
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#aboutme" onclick="closeMenu()">About</a>
+        <a href="#experience" onclick="closeMenu()">Experience</a>
+        <a href="#skills" onclick="closeMenu()">Skills</a>
+        <a href="#project" onclick="closeMenu()">Projects</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
     </div>
 
-    <ul class="desktop-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service">Services</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- Sidebar -->
-<div class="sidebar" id="sidebar">
-    <div class="close-btn" onclick="closeMenu()">
-        <i class="bi bi-x-lg"></i>
-    </div>
-
-    <a href="#home" onclick="closeMenu()">Home</a>
-    <a href="#about" onclick="closeMenu()">About</a>
-    <a href="#service" onclick="closeMenu()">Services</a>
-    <a href="#project" onclick="closeMenu()">Projects</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
-</div>
-
-<div class="overlay" id="overlay" onclick="closeMenu()"></div>
-    </header>
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+</header>
 
     <main>
         <div id="home">
@@ -141,7 +143,7 @@
                 </div>
             </section>
             <hr>
-            <section class="thsec">
+            <section class="thsec" id="skills">
                 <span class="gray">What I Know</span>
                 <h2>QA Skills</h2>
 
@@ -193,6 +195,12 @@
                         <span>Python</span>
                         <div class="progress">
                             <div class="progress-bar bg-warning prg" role="progressbar" style="width:70%">70%</div>
+                        </div>
+                    </div>
+                     <div class="pro">
+                        <span>Github</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-info prg" role="progressbar" style="width:85%">85%</div>
                         </div>
                     </div>
 
@@ -257,6 +265,49 @@
                 </div>
             </section>
         </div>
+        <!-- Experience Section -->
+<section id="experience" class="experience-section">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-card">
+            <div class="experience-header">
+                <h3>Quality Assurance Engineer / QA Intern</h3>
+                <h4>Webelight Solutions Pvt. Ltd., Ahmedabad</h4>
+                <span class="experience-duration">January 2025 – Present</span>
+            </div>
+
+            <div class="experience-content">
+                <p>
+                    Working as a Quality Assurance professional, ensuring the quality,
+                    reliability, and performance of web and mobile applications through
+                    manual, API, and automation testing.
+                </p>
+
+                <h5>Key Responsibilities</h5>
+                <ul>
+                    <li>Designed and executed detailed test cases and test scenarios based on business requirements.</li>
+                    <li>Performed functional, regression, smoke, sanity, and UI testing.</li>
+                    <li>Conducted API testing using Postman and validated request/response data.</li>
+                    <li>Developed and maintained automation test scripts using Playwright with Python.</li>
+                    <li>Identified, documented, tracked, and verified defects using Jira.</li>
+                    <li>Collaborated closely with developers, business analysts, and stakeholders to ensure product quality.</li>
+                    <li>Participated in requirement analysis, test planning, and sprint activities.</li>
+                    <li>Validated application functionality across multiple browsers and devices.</li>
+                    <li>Prepared test reports and provided quality metrics to the team.</li>
+                    <li>Contributed to improving testing processes and overall product quality.</li>
+                </ul>
+
+                <h5>Tools & Technologies</h5>
+                <p>
+                    Playwright, Python, Postman, Jira, GitHub, Selenium, SQL,
+                    Manual Testing, API Testing, Automation Testing,
+                    Regression Testing, Smoke Testing, Functional Testing
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
         <section class="projectsec" id="project">
             <span class="gray">My Portfolio</span>
             <h2>QA Project Highlights</h2>
