@@ -306,15 +306,15 @@ main hr {
   min-height: 300px;
   margin: 50px 5px;
   padding: 20px;
-  background-color:radial-gradient(#6c757d, #000);
   color: white;
-  background-color: rgb(16, 16, 16);
+
   border: 3px solid white;
   color: white;
-  background: linear-gradient(to right, white );
+ 
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
+  background: bottom;
 }
 
 .cd i {
