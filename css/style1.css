@@ -2,7 +2,7 @@
  
 
   body {
-    overflow-x: none;
+    overflow-x: hidden;
   }
 
   header nav {
@@ -30,13 +30,50 @@
     margin: 30px;
     padding: 0px;
   }
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.project-card{
+    width:100%;
+    min-height:250px;
+}
+@media (max-width: 768px){
 
+    .firstsec{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .leftsec,
+    .rightsec{
+        width:100%;
+    }
+
+    .project-container{
+        grid-template-columns:1fr;
+    }
+
+    .exb{
+        flex-direction:column;
+    }
+}
+@media(max-width:768px){
+    .project-container{
+        grid-template-columns:1fr;
+    }
+}
   .rightsec img {
-    width: 60%;
+  
     border-radius: 10px;
     box-shadow: 12px 9px 13px 1px #212529;
     margin: auto;
-    float: left;
+    width:80%;
+    max-width:300px;
+    display:block;
+    margin:auto;
+    float:none;
   }
 
   .bt {
