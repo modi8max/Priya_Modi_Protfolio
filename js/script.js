@@ -6,8 +6,7 @@ var typed = new Typed("#element", {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.querySelector('.toggle-button');
-const navbarLinks = document.querySelector('.navbar-links');
+  
   const right = document.querySelector(".right");
   const navbarLinks = document.querySelector(".navbar-links");
 
@@ -17,10 +16,4 @@ const navbarLinks = document.querySelector('.navbar-links');
   navbarLinks.addEventListener("click", function () {
     navbarLinks.classList.remove("active");
   });
-  
-  toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
-});
-  
-
 });
